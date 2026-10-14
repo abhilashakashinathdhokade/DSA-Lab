@@ -1,4 +1,5 @@
 # singly linear linked list
+#circularll
 class Node:
     def __init__(self,val):
         self.data = val
@@ -65,7 +66,8 @@ class LinkedList:
         #         prev = curr
         #         curr = nextnode
         #     self.head = prev
-            
+
+
 
     def print(self):
         # sum = 0 #sum of even/odd values
