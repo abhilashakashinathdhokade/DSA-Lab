@@ -49,6 +49,7 @@ st.reverse()
 
 st1.print()
 st.reverse_stack()
+
 #st.pop()
 
 
