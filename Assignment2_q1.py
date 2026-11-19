@@ -64,6 +64,7 @@ st.push(Node(40))
 st.push(Node(50))
 
 print("Original stack:")
+
 st.display()
 
 st.reverse()
