@@ -48,6 +48,7 @@ st.push(Node(50))
 st.reverse()
 
 st1.print()
+
 #st.pop()
 
 
