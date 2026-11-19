@@ -37,4 +37,5 @@ btree.insert(Node(2))
 btree.insert(Node(25))
 btree.insert(Node(40))
 
+
 inorder(bst.root)
