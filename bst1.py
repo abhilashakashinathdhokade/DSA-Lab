@@ -92,4 +92,5 @@ b1.preorder(b1.root)
 print("\nPostorder: ")
 b1.postorder(b1.root)
 
+
 b1.findminmax()
