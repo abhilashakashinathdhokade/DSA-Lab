@@ -133,3 +133,8 @@ b1.findminmax()
 b1.del_node(b1.root, 450)
 print("\nInorder after deletion: ")
 b1.inorder(b1.root)
+
+if b1.search(450):
+    print("\n found in the node")
+else:
+    print("\n not found")    
