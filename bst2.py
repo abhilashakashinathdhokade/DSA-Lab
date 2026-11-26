@@ -45,15 +45,30 @@ class BST:
         
         arr=[]
         cnt=0 #for counting visited node 
+        level=0
         arr.append(rt)
         while cnt<len(arr):
-            temp=arr[cnt]
-            print(temp.data,end=" ")
-            cnt+=1
-            if temp.left is not None:
-                arr.append(temp.left)
-            if temp.right is not None:
-                arr.append(temp.right)                
+            node_count=len(arr)-cnt #no. of nodes to be visited
+            print("\nLevel ",level,": ",end=" ")
+            for i in range(node_count):
+                temp=arr[cnt]
+                print(temp.data,end=" ")
+                cnt+=1
+                if temp.left is not None:
+                    arr.append(temp.left)
+                if temp.right is not None:
+                    arr.append(temp.right)
+                    temp=arr[cnt]
+                print(temp.data,end=" ")
+                cnt+=1
+                if temp.left is not None:
+                    arr.append(temp.left)
+                if temp.right is not None:
+                    arr.append(temp.right) 
+            level+=1
+        print("\nHeight of the tree: ",level-1)    
+
+
 
 b1 = BST()
 
